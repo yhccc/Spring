@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--example-->
+
+    <!--&lt;!&ndash;id属性：名字（唯一）&ndash;&gt;-->
+    <!--&lt;!&ndash;class属性：配置全限定名&ndash;&gt;-->
+    <!--&lt;!&ndash;name属性：别名（多个）[可选]&ndash;&gt;-->
+    <!--<bean id="user" class="com.yhc.example.User"/>-->
+
+    <!--&lt;!&ndash;<bean name="p, p1" id="person" class="com.yhc.example.Person">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="id" value="11"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="name" value="xiaojr"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="emails">&ndash;&gt;-->
+            <!--&lt;!&ndash;<list>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>471023847@qq.com</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>yinhc0129@163.com</value>&ndash;&gt;-->
+            <!--&lt;!&ndash;</list>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="tels">&ndash;&gt;-->
+            <!--&lt;!&ndash;<set>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>123456789</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>4888887116</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>48484856</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>112233</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>4444555556666</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>123456789</value>&ndash;&gt;-->
+            <!--&lt;!&ndash;</set>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="addresses">&ndash;&gt;-->
+            <!--&lt;!&ndash;<list>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>zpark</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>shangdi</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>xierq</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;<value>xierq</value>&ndash;&gt;-->
+            <!--&lt;!&ndash;</list>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="qqs">&ndash;&gt;-->
+            <!--&lt;!&ndash;<map>&ndash;&gt;-->
+                <!--&lt;!&ndash;<entry>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<key>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<value>yhc</value>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</key>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<value>111111111</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;</entry>&ndash;&gt;-->
+                <!--&lt;!&ndash;<entry>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<key><value>xnx</value></key>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<value>22222222</value>&ndash;&gt;-->
+                <!--&lt;!&ndash;</entry>&ndash;&gt;-->
+            <!--&lt;!&ndash;</map>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="properties">&ndash;&gt;-->
+            <!--&lt;!&ndash;<props>&ndash;&gt;-->
+                <!--&lt;!&ndash;<prop key="key1">value1</prop>&ndash;&gt;-->
+                <!--&lt;!&ndash;<prop key="key2">value2</prop>&ndash;&gt;-->
+            <!--&lt;!&ndash;</props>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<bean id="userService" class="com.yhc.example.UserServiceImpl">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="userDAO">&ndash;&gt;-->
+            <!--&lt;!&ndash;<bean class="com.yhc.example.UserDAOImpl"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</property>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+
+    <!--<bean id="userDAO" class="com.yhc.example.UserDAOImpl"/>-->
+    <!--&lt;!&ndash;<bean id="userService" class="com.yhc.example.UserServiceImpl">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="userDAO" ref="userDAO"/>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;p省略&ndash;&gt;-->
+    <!--<bean id="person" class="com.yhc.example.Person"-->
+          <!--p:name="xiaojr"-->
+          <!--p:id="100"/>-->
+
+    <!--<bean id="userService" class="com.yhc.example.UserServiceImpl"-->
+          <!--p:userDAO-ref="userDAO"/>-->
+
+    <!--&lt;!&ndash;构造注入&ndash;&gt;-->
+    <!--<bean id="customer" class="com.yhc.example.constructor.Customer">-->
+        <!--<constructor-arg type="int">-->
+            <!--<value>37</value>-->
+        <!--</constructor-arg>-->
+        <!--&lt;!&ndash;<constructor-arg>&ndash;&gt;-->
+            <!--&lt;!&ndash;<value>22</value>&ndash;&gt;-->
+        <!--&lt;!&ndash;</constructor-arg>&ndash;&gt;-->
+    <!--</bean>-->
+
+<!--factorybean-->
+    <!--<bean id="conn" class="com.yhc.factorybean.ConnectionFactoryBean">-->
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+        <!--<property name="url" value="jdbc:mysql://localhost:3306/yhc?useSSL=false"/>-->
+        <!--<property name="username" value="root"/>-->
+        <!--<property name="password" value="476004"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="connFactory" class="com.yhc.factorybean.ConnectionFactory"/>-->
+    <!--<bean id="conn" factory-bean="connFactory" factory-method="getConnection"/>-->
+
+    <!--<bean id="conn" class="com.yhc.factorybean.StaticConnectionFactory" factory-method="getConnection"/>-->
+
+<!--scope-->
+    <!--<bean id="account" class="com.yhc.scope.Account" scope="prototype"/>-->
+
+<!--life-->
+    <!--<bean id="product" class="com.yhc.life.Product"/>-->
+    <!--<bean id="product" class="com.yhc.life.Product" scope="prototype" init-method="myInit" destroy-method="myDestory">-->
+        <!--<property name="name" value="yhc"/>-->
+    <!--</bean>-->
+</beans>
