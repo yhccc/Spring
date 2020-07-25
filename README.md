@@ -4,6 +4,7 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 ![SpringLearn](./_Images/SpringFramework5.x.png)
 
 ## 章节目录
+### Spring IOC Factory
 [01.引言](./_01_引言.md)  
   
 [02.第一个Spring程序](./_02_第一个Spring程序.md)  
@@ -27,5 +28,9 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 [11.配置文件参数化](./_11_配置文件参数化.md)  
   
 [12.自定义类型转换器](./_12_自定义类型转换器.md)  
-
-<p align="right">更新时间: 2020-07-24</p>
+  
+[13.后置处理Bean](./_13_后置处理Bean.md)  
+  
+### Spring AOP
+[14.静态代理设计模式](./_14_静态代理设计模式.md)  
+<p align="right">更新时间: 2020-07-25</p>
