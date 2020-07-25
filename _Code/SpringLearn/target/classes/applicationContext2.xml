@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+<!--converter-->
+
+    <!--bean标签的书写顺序与创建顺序无关-->
+    <bean id="dateConverter" class="com.yhc.converter.MyDateConverter" p:pattern="yyyy-MM-dd"/>
+
+    <!--用于注册类型转换器 id固定不能变动-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <ref bean="dateConverter"/>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="person" class="com.yhc.converter.Person">
+        <property name="name" value="yhc"/>
+        <property name="birthday" value="1997-09-30"/>
+    </bean>
+
+
+</beans>

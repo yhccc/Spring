@@ -5,14 +5,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <!--Spring配置文件与小配置文件的整合-->
-    <context:property-placeholder location="db.properties"/>
 
-    <bean id="conn" class="com.yhc.factorybean.ConnectionFactoryBean">
-        <property name="driverClassName" value="${jdbc.driverClassName}"/>
-        <property name="url" value="${jdbc.url}"/>
-        <property name="username" value="${jdbc.username}"/>
-        <property name="password" value="${jdbc.password}"/>
+<!--beanpost-->
+    <bean id="categroy" class="com.yhc.beanpost.Categroy">
+        <property name="name" value="xiaojr"/>
+        <property name="id" value="1"/>
     </bean>
+
+    <bean id="myBeanPostProcessor" class="com.yhc.beanpost.MyBeanPostProcessor"/>
 
 </beans>

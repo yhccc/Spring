@@ -1,9 +1,13 @@
 package com.yhc;
 
 
-import com.yhc.example.*;
+
+import com.yhc.beanpost.Categroy;
+import com.yhc.example.BeanFactory;
+import com.yhc.example.IUserService;
+import com.yhc.example.Person;
+import com.yhc.example.User;
 import com.yhc.example.constructor.Customer;
-import com.yhc.factorybean.ConnectionFactoryBean;
 import com.yhc.life.Product;
 import com.yhc.scope.Account;
 import org.junit.Test;
@@ -157,6 +161,20 @@ public class TestSpring {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext1.xml");
         Connection connection = (Connection) ctx.getBean("conn");
         System.out.println("conn = " + connection);
+    }
+
+    @Test
+    public void test13(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext2.xml");
+        com.yhc.converter.Person person = (com.yhc.converter.Person) ctx.getBean("person");
+        System.out.println(person);
+    }
+
+    @Test
+    public void test14(){
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("/applicationContext3.xml");
+        Categroy c = (Categroy) ctx.getBean("categroy");
+        System.out.println(c.getName());
     }
 
 }
