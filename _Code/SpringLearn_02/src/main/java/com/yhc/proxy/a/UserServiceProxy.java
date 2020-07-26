@@ -1,4 +1,4 @@
-package com.yhc.proxy;
+package com.yhc.proxy.a;
 
 public class UserServiceProxy implements IUserService {
 

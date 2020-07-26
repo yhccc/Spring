@@ -1,6 +1,9 @@
-package com.yhc.proxy;
+package com.yhc.proxy.a;
+
+import com.yhc.Log;
 
 public class UserServiceImpl implements IUserService {
+    @Log
     @Override
     public void register(User user) {
         System.out.println("UserServiceImpl.register");

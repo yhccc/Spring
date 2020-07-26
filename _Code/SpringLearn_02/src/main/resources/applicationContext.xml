@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userService" class="com.yhc.proxy.a.UserServiceImpl"/>
+    <bean id="orderService" class="com.yhc.proxy.OrderServiceImpl"/>
+
+    <!--<bean id="before" class="com.yhc.dynamic.Before"/>-->
+    <!--<bean id="before" class="com.yhc.dynamic.Before1"/>-->
+    <bean id="around" class="com.yhc.dynamic.Around"/>
+
+    <!--所有的方法，都作为切入点，加入额外功能-->
+    <aop:config>
+        <!--方法切入点-->
+        <!--<aop:pointcut id="pc" expression="execution(* com.yhc.proxy.a.UserServiceImpl.login(..))"/>-->
+        <!--类切入点-->
+        <!--<aop:pointcut id="pc" expression="execution(* com.yhc.proxy.a.UserServiceImpl.*(..))"/>-->
+        <!--<aop:pointcut id="pc" expression="execution(* *..UserServiceImpl.*(..))"/>-->
+        <!--包切入点-->
+        <!--<aop:pointcut id="pc" expression="execution(* com.yhc.proxy.*.*(..))"/>-->
+        <!--<aop:pointcut id="pc" expression="execution(* com.yhc.proxy..*.*(..))"/>-->
+
+        <!--切入点函数-->
+        <!--<aop:pointcut id="pc" expression="args(String, String)"/>-->
+        <!--<aop:pointcut id="pc" expression="within(*..UserServiceImpl)"/>-->
+        <!--<aop:pointcut id="pc" expression="within(com.yhc.proxy..*)"/>-->
+        <!--<aop:pointcut id="pc" expression="@annotation(com.yhc.Log)"/>-->
+
+        <!--切入点函数逻辑运算-->
+        <!--<aop:pointcut id="pc" expression="execution(* login(..)) and args(String, String)"/>-->
+        <aop:pointcut id="pc" expression="execution(* login(..)) or execution(* register(..))"/>
+
+        <!--组装: 目的把切入点 与 额外功能进行整合-->
+        <aop:advisor advice-ref="around" pointcut-ref="pc"/>
+    </aop:config>
 
 </beans>
