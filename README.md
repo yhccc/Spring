@@ -33,4 +33,8 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
   
 ### Spring AOP
 [14.静态代理设计模式](./_14_静态代理设计模式.md)  
-<p align="right">更新时间: 2020-07-25</p>
+  
+[15.Spring的动态代理开发](./_15_Spring的动态代理开发.md)  
+  
+[16.Spring动态代理详解](./_16_Spring动态代理详解.md)  
+<p align="right">更新时间: 2020-07-26</p>
