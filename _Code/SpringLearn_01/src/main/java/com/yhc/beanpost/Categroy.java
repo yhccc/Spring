@@ -20,4 +20,8 @@ public class Categroy {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void myInit(){
+        System.out.println("Categroy.myInit");
+    }
 }

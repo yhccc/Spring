@@ -7,11 +7,11 @@
 
 
 <!--beanpost-->
-    <bean id="categroy" class="com.yhc.beanpost.Categroy">
+    <bean id="categroy" class="com.yhc.beanpost.Categroy" init-method="myInit">
         <property name="name" value="xiaojr"/>
         <property name="id" value="1"/>
     </bean>
 
-    <bean id="myBeanPostProcessor" class="com.yhc.beanpost.MyBeanPostProcessor"/>
+    <bean id="myBeanPostProcessor" class="com.yhc.beanpost.MyBeanPostProcessor" />
 
 </beans>

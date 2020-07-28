@@ -13,11 +13,14 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
         return null;
     }
 
+
+
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         if (bean instanceof Categroy) {
             Categroy c = (Categroy) bean;
             c.setName("xiaowb");
+            System.out.println("postProcessAfterInitialization");
         }
         return bean;
     }

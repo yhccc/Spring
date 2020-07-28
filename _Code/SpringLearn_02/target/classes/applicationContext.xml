@@ -29,7 +29,7 @@
 
         <!--切入点函数逻辑运算-->
         <!--<aop:pointcut id="pc" expression="execution(* login(..)) and args(String, String)"/>-->
-        <aop:pointcut id="pc" expression="execution(* login(..)) and execution(* register(..))"/>
+        <aop:pointcut id="pc" expression="execution(* login(..)) or execution(* register(..))"/>
 
         <!--组装: 目的把切入点 与 额外功能进行整合-->
         <aop:advisor advice-ref="around" pointcut-ref="pc"/>
