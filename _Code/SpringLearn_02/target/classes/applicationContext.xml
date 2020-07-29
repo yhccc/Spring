@@ -11,7 +11,7 @@
     <bean id="around" class="com.yhc.dynamic.Around"/>
 
     <!--所有的方法，都作为切入点，加入额外功能-->
-    <aop:config>
+    <aop:config proxy-target-class="true">
         <!--方法切入点-->
         <!--<aop:pointcut id="pc" expression="execution(* com.yhc.proxy.a.UserServiceImpl.login(..))"/>-->
         <!--类切入点-->
