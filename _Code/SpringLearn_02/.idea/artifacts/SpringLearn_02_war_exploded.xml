@@ -13,8 +13,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.48" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.14.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.13" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.13" />
         </element>
