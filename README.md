@@ -57,7 +57,7 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 
 #### 报错解决
 
-> ​		无法读取方案文档 'https://www.springframework.org/schema/tool/spring-tool.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>
+> 无法读取方案文档 'https://www.springframework.org/schema/tool/spring-tool.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>
 >
 > 问题原因：https://www.springframework.org/schema/tool/spring-tool.xsd  https无法读取  ->  只能读取http的文件
 
