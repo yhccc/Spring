@@ -48,6 +48,12 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 
 [21.AOP阶段知识总结](./_21_AOP阶段知识总结.md)  
 
+[22.持久层整合](./_22_持久层整合.md)  
+
+[23.Spring与MyBatis整合](./_23_Spring与MyBatis整合.md)  
+
+[24.Spring的事务处理](./_24_Spring的事务处理.md)  
+
 ### Spring + Persistence Layer
 
 #### 报错解决
@@ -56,4 +62,4 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 >
 > 问题原因：https://www.springframework.org/schema/tool/spring-tool.xsd  https无法读取  ->  只能读取http的文件
 
-<p align="right">更新时间: 2020-07-29</p>
+<p align="right">更新时间: 2020-07-30</p>
