@@ -47,14 +47,13 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 [20.AOP开发中的一个坑](./_20_AOP开发中的一个坑.md)  
 
 [21.AOP阶段知识总结](./_21_AOP阶段知识总结.md)  
-
-[22.持久层整合](./_22_持久层整合.md)  
-
-[23.Spring与MyBatis整合](./_23_Spring与MyBatis整合.md)  
-
-[24.Spring的事务处理](./_24_Spring的事务处理.md)  
-
+  
 ### Spring + Persistence Layer
+[22.持久层整合](./_22_持久层整合.md)  
+  
+[23.Spring与MyBatis整合](./_23_Spring与MyBatis整合.md)  
+  
+[24.Spring的事务处理](./_24_Spring的事务处理.md)  
 
 #### 报错解决
 
