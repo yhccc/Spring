@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acfab83d-7479-4c94-af83-d2628c5d73d2" name="Default Changelist" comment="">
-      <change beforePath="$MAVEN_REPOSITORY$/junit/junit/4.11/_remote.repositories" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/junit/junit/4.11/_remote.repositories" afterDir="false" />
-      <change beforePath="$MAVEN_REPOSITORY$/org/apache/cocoon/cocoon-22-archetype-webapp/resolver-status.properties" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/org/apache/cocoon/cocoon-22-archetype-webapp/resolver-status.properties" afterDir="false" />
-      <change beforePath="$MAVEN_REPOSITORY$/org/apache/maven/archetypes/maven-archetype-webapp/resolver-status.properties" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/org/apache/maven/archetypes/maven-archetype-webapp/resolver-status.properties" afterDir="false" />
-      <change beforePath="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/_remote.repositories" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/_remote.repositories" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/.idea/libraries/Maven__org_springframework_spring_aop_5_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/SpringLearn_02.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/SpringLearn_02.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/target/classes/applicationContext1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/target/classes/applicationContext1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/target/classes/applicationContext2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/target/classes/applicationContext2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_24_Spring的事务处理.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../_24_Spring的事务处理.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,35 +16,35 @@
     <session id="1977183429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="java" value="5" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="5" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="15" />
+          <entry key="java" value="35" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="35" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -116,19 +105,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext1.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-              <folding>
-                <element signature="e#736#761#0" expanded="true" />
-              </folding>
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactoryBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactoryBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="420">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -144,6 +139,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yhc/beanpost/MyBeanPostProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yhc/beanpost/Categroy.java" />
         <option value="$PROJECT_DIR$/src/main/resources/applicationContext3.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactory.java" />
       </list>
     </option>
   </component>
@@ -154,9 +150,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="945" />
-    <option name="width" value="982" />
-    <option name="height" value="1044" />
+    <option name="x" value="944" />
+    <option name="width" value="983" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -165,7 +161,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +199,15 @@
               <item name="SpringLearn_01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yhc" type="462c0819:PsiDirectoryNode" />
+              <item name="factorybean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearn_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearn_01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -231,6 +235,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -295,6 +300,7 @@
       <workItem from="1595951218071" duration="11000" />
       <workItem from="1596018972821" duration="24000" />
       <workItem from="1596073948839" duration="34000" />
+      <workItem from="1596089644540" duration="33000" />
     </task>
     <servers />
   </component>
@@ -307,12 +313,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="920000" />
+    <option name="totallyTimeSpent" value="953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26728722" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2712766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -395,10 +402,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-          <folding>
-            <element signature="e#736#761#0" expanded="true" />
-          </folding>
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -406,6 +410,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
         </state>
       </provider>
     </entry>
