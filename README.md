@@ -55,6 +55,16 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 
 [24.Spring的事务处理](./_24_Spring的事务处理.md)  
 
+[25.Spring中的事务属性.md](./_25_Spring中的事务属性.md)  
+
+### Spring + Struts2 + MyBatis
+
+[26.MVC框架整合思想](./_26_MVC框架整合思想.md)  
+
+[27.Spring与Struts2框架整合](./_27_Spring与Struts2框架整合.md)  
+
+[28.Spring+Struts2+MyBatis整合.md](./_28_Spring+Struts2+MyBatis整合.md)  
+
 #### 报错解决
 
 > 无法读取方案文档 'https://www.springframework.org/schema/tool/spring-tool.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>
