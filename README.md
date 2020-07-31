@@ -54,6 +54,8 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 [23.Spring与MyBatis整合](./_23_Spring与MyBatis整合.md)  
 
 [24.Spring的事务处理](./_24_Spring的事务处理.md)  
+  
+[25.Spring中的事务属性](./_25_Spring中的事务属性.md)  
 
 [25.Spring中的事务属性.md](./_25_Spring中的事务属性.md)  
 
