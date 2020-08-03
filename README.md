@@ -68,7 +68,7 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 [29.注解基础概念](_29_注解基础概念.md)  
 
 [30.Spring的基础注解](_30_Spring的基础注解.md)  
-  
+
 [31.Spring的高级注解](_31_Spring的高级注解.md)  
 #### 报错解决
 
@@ -76,4 +76,17 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 >
 > 问题原因：https://www.springframework.org/schema/tool/spring-tool.xsd  https无法读取  ->  只能读取http的文件
 
-<p align="right">更新时间: 2020-08-02</p>
+> SSM整合之后，tomcat运行，log4j或logback不再打印日志信息
+>
+> pom.xml依赖文件中 test 改为 compile 即可
+>
+> ```xml
+> <dependency>
+>     <groupId>org.slf4j</groupId>
+>     <artifactId>slf4j-log4j12</artifactId>
+>     <version>1.7.25</version>
+>     <scope>test</scope> -> <scope>compile</scope>
+> </dependency>
+> ```
+
+<p align="right">更新时间: 2020-08-03</p>
