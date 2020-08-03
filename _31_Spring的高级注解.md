@@ -90,7 +90,7 @@
 
 ### 2）@Bean注解
 
-> @Bean注解在配置Bean中进行使用，等同于XML配置文件中的<bean>标签
+> @Bean注解在配置Bean中进行使用，等同于XML配置文件中的\<bean>标签
 
 #### 2.1）@Bean注解的基本使用
 
@@ -375,7 +375,7 @@ public class AppConfig {
 >
 > 1. 基于schema
 > 2. 基于特定功能注解
-> 3. 基于原始<bean>
+> 3. 基于原始\<bean>
 > 4. 基于@Bean注解
 
 #### 7.2）四维一体的开发案例
@@ -432,7 +432,7 @@ public class Account implements Serializable {
 }
 ```
 
-3. 基于原始<bean>
+3. 基于原始\<bean>
 
 ```xml
 <bean id="propertyHolder" class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">

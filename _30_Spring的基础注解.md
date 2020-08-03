@@ -15,7 +15,7 @@
 
 #### @Component
 
-> 作用：替换原有Spring配置文件中的<bean>标签
+> 作用：替换原有Spring配置文件中的\<bean>标签
 >
 > id默认值：类名首单词首字母小写
 >
@@ -43,18 +43,18 @@
 >
 > 注意：本质上这些衍生注解就是@Component
 >
-> - 作用与<bean>标签和@Component一致
+> - 作用与\<bean>标签和@Component一致
 > - Spring整合MyBatis开发过程中，不使用@Component和@Repository，因为Spring整合MyBatis开发过程不创建DAO类
 
 #### @Scope注解
 
-> 作用：用于控制简单对象的创建次数，与<bean>标签的scope属性效果一致
+> 作用：用于控制简单对象的创建次数，与\<bean>标签的scope属性效果一致
 >
 > 默认值为：singleton
 
 #### @Lazy注解
 
-> 作用：延迟创建单实例对象，与<bean>标签的lazy属性效果一致
+> 作用：延迟创建单实例对象，与\<bean>标签的lazy属性效果一致
 >
 > 注意：一旦使用了@Lazy注解后，Spring会在使用这个对象的时候，进行这个对象的创建
 
@@ -189,7 +189,7 @@ type: assignable：排除特定的类型，不进行扫描
 
 - 什么情况下使用注解，什么情况下使用配置文件
 
-  > @Component 替换 <bean>标签
+  > @Component 替换 \<bean>标签
   >
   > 基础注解（@Component @AutoWired @Value）程序员开发类型的配置
   >
@@ -197,7 +197,7 @@ type: assignable：排除特定的类型，不进行扫描
   >
   >    User、UserServiceImpl、UserDAOImpl、UserAction
   >
-  > 2. 应用其他非程序员开发的类型时，还时需要使用<bean>标签进行配置
+  > 2. 应用其他非程序员开发的类型时，还时需要使用\<bean>标签进行配置
   >
   >    SqlSessionFactoryBean、MapperScannerConfigure
 
