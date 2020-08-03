@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acfab83d-7479-4c94-af83-d2628c5d73d2" name="Default Changelist" comment="">
-      <change beforePath="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1/_remote.repositories" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1/_remote.repositories" afterDir="false" />
-      <change beforePath="$MAVEN_REPOSITORY$/org/apache/maven/shared/maven-shared-utils/3.1.0/_remote.repositories" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/org/apache/maven/shared/maven-shared-utils/3.1.0/_remote.repositories" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_03/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_03/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_03/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_03/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$MAVEN_REPOSITORY$/org/apache/maven/archetypes/maven-archetype-quickstart/resolver-status.properties" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/org/apache/maven/archetypes/maven-archetype-quickstart/resolver-status.properties" afterDir="false" />
+      <change beforePath="$MAVEN_REPOSITORY$/org/apache/maven/archetypes/maven-archetype-webapp/resolver-status.properties" beforeDir="false" afterPath="$MAVEN_REPOSITORY$/org/apache/maven/archetypes/maven-archetype-webapp/resolver-status.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../_30_Spring的基础注解.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../_30_Spring的基础注解.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringLearn_04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/SpringLearn_04.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/SpringLearn_04.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/src/main/resources/com.yhc.mapper/UserDAOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/src/main/resources/com.yhc.mapper/UserDAOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/src/main/java/com/yhc/action/RegAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/src/main/java/com/yhc/action/RegAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/src/main/java/com/yhc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/src/main/java/com/yhc/service/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/com.yhc.mapper/UserDAOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/com.yhc.mapper/UserDAOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/classes/com.yhc.mapper/UserDAOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/classes/com.yhc.mapper/UserDAOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/com/yhc/action/RegAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/com/yhc/action/RegAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/com/yhc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/SpringLearn_04-1.0-SNAPSHOT/WEB-INF/classes/com/yhc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/classes/com/yhc/action/RegAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/classes/com/yhc/action/RegAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_04/target/classes/com/yhc/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_04/target/classes/com/yhc/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearn_05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearn_05/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,26 +30,26 @@
     <session id="1977183429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.0" value="4" />
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.0" value="7" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="6" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="6" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="5" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -64,15 +68,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com.yhc/TestSpring.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3108">
-              <caret line="160" column="76" selection-start-line="160" selection-start-column="76" selection-end-line="160" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/beanpost/MyBeanPostProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,24 +108,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext1.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-              <folding>
-                <element signature="e#736#761#0" expanded="true" />
-                <element signature="e#799#812#0" expanded="true" />
-              </folding>
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactoryBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactoryBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/StaticConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="483">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -138,8 +138,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="462">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="101" column="111" selection-start-line="101" selection-start-column="111" selection-end-line="101" selection-end-column="111" />
             </state>
           </provider>
         </entry>
@@ -171,9 +180,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="943" />
-    <option name="width" value="985" />
-    <option name="height" value="1047" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -182,6 +191,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,6 +230,15 @@
               <item name="SpringLearn_01" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yhc" type="462c0819:PsiDirectoryNode" />
+              <item name="factorybean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringLearn_01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringLearn_01" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -247,7 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,6 +332,9 @@
       <workItem from="1596073948839" duration="34000" />
       <workItem from="1596089644540" duration="33000" />
       <workItem from="1596360848550" duration="20000" />
+      <workItem from="1596435443464" duration="136000" />
+      <workItem from="1596435624168" duration="3000" />
+      <workItem from="1596435638099" duration="160000" />
     </task>
     <servers />
   </component>
@@ -326,13 +347,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="973000" />
+    <option name="totallyTimeSpent" value="1272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27526596" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28723404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -398,23 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext3.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -432,11 +436,38 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <element signature="e#736#761#0" expanded="true" />
-            <element signature="e#799#812#0" expanded="true" />
-          </folding>
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/StaticConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="101" column="111" selection-start-line="101" selection-start-column="111" selection-end-line="101" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhc/factorybean/ConnectionFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
         </state>
       </provider>
     </entry>

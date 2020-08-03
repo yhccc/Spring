@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:component-scan base-package="com.yhc"/>
+
+    <!--连接池-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/yhc?useSSL=false"/>
+        <property name="username" value="root"/>
+        <property name="password" value="476004"/>
+    </bean>
+
+    <!--创建SqlSessionFactory-->
+    <bean id="ssfb" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="typeAliasesPackage" value="com.yhc.entity"/>
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:com.yhc.mapper/*Mapper.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--DAO接口的实现类-->
+    <bean id="scanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="ssfb"/>
+        <property name="basePackage" value="com.yhc.dao"/>
+    </bean>
+
+
+    <!--2. 额外功能: 事务-->
+    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--4. 组装切面-->
+    <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
+    
+</beans>

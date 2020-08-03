@@ -202,3 +202,26 @@ type: assignable：排除特定的类型，不进行扫描
   >    SqlSessionFactoryBean、MapperScannerConfigure
 
 ### 4）SSM整合开发（半注解开发）
+
+- 搭建开发环境
+  - 引入相关jar包
+  - 引用相关配置文件
+    - applicationContext.xml
+    - struts.xml
+    - log4j.properties
+    - XXXMapper.xml
+  - 初始化配置
+    - Web.xml Spring ContextLoaderListener
+    - Web.xml struts Filter
+
+- 编码
+
+  - 注解扫描配置
+
+  ```xml
+  <context:component-scan base-package="com.yhc"/>
+  ```
+
+  - DAO
+  - Service
+  - Controller

@@ -4,6 +4,7 @@ import com.opensymphony.xwork2.Action;
 import com.yhc.entity.User;
 import com.yhc.service.UserService;
 
+
 public class RegAction implements Action {
 
     private UserService userService;

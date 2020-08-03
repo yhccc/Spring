@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 public class UserServiceImpl implements UserService {
+
     private UserDAO userDAO;
 
     public UserDAO getUserDAO() {
