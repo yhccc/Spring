@@ -54,10 +54,8 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 [23.Spring与MyBatis整合](./_23_Spring与MyBatis整合.md)  
 
 [24.Spring的事务处理](./_24_Spring的事务处理.md)  
-  
-[25.Spring中的事务属性](./_25_Spring中的事务属性.md)  
 
-[25.Spring中的事务属性.md](./_25_Spring中的事务属性.md)  
+[25.Spring中的事务属性](./_25_Spring中的事务属性.md)  
 
 ### Spring + Struts2 + MyBatis
 
@@ -65,7 +63,13 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 
 [27.Spring与Struts2框架整合](./_27_Spring与Struts2框架整合.md)  
 
-[28.Spring+Struts2+MyBatis整合.md](./_28_Spring+Struts2+MyBatis整合.md)  
+[28.Spring+Struts2+MyBatis整合](./_28_Spring+Struts2+MyBatis整合.md)  
+
+### Annotation Programming
+
+[29.注解基础概念](_29_注解基础概念.md)  
+
+[30.Spring的基础注解](_30_Spring的基础注解.md)  
 
 #### 报错解决
 
@@ -73,4 +77,4 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 >
 > 问题原因：https://www.springframework.org/schema/tool/spring-tool.xsd  https无法读取  ->  只能读取http的文件
 
-<p align="right">更新时间: 2020-07-30</p>
+<p align="right">更新时间: 2020-08-02</p>
