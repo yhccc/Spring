@@ -26,7 +26,7 @@ public class TestMyBatisSpring {
 
     /*
         用于测试：Spring的事务处理
-     */
+    */
     @Test
     public void test2(){
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -39,8 +39,8 @@ public class TestMyBatisSpring {
     }
 
     /*
-    用于测试：Spring的基于标签事务属性
- */
+        用于测试：Spring的基于标签事务属性
+     */
     @Test
     public void test3(){
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext_tx.xml");

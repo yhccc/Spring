@@ -7,36 +7,4 @@
     <import resource="applicationContext-dao.xml"/>
     <import resource="applicationContext-action.xml"/>
 
-    <!--&lt;!&ndash;连接池&ndash;&gt;-->
-    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
-        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
-        <!--<property name="url" value="jdbc:mysql://localhost:3306/yhc?useSSL=false"/>-->
-        <!--<property name="username" value="root"/>-->
-        <!--<property name="password" value="476004"/>-->
-    <!--</bean>-->
-
-    <!--&lt;!&ndash;创建SqlSessionFactory&ndash;&gt;-->
-    <!--<bean id="ssfb" class="org.mybatis.spring.SqlSessionFactoryBean">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-        <!--<property name="typeAliasesPackage" value="com.yhc.entity"/>-->
-        <!--<property name="mapperLocations">-->
-            <!--<list>-->
-                <!--<value>classpath:com.yhc.mapper/*Mapper.xml</value>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
-
-    <!--<bean id="scanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
-        <!--<property name="sqlSessionFactoryBeanName" value="ssfb"/>-->
-        <!--<property name="basePackage" value="com.yhc.dao"/>-->
-    <!--</bean>-->
-
-    <!--&lt;!&ndash;2. 额外功能: 事务&ndash;&gt;-->
-    <!--<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
-        <!--<property name="dataSource" ref="dataSource"/>-->
-    <!--</bean>-->
-
-    <!--&lt;!&ndash;4. 组装切面&ndash;&gt;-->
-    <!--<tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>-->
-
 </beans>
