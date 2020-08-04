@@ -1,6 +1,6 @@
 ## 三十一、Spring的高级注解（Spring3.x及以上）
 
-### 1）配置Bean
+### 1）配置bean
 
 > Spring在3.x提供的新的注解，用于替换XML配置文件。
 >
@@ -11,15 +11,15 @@
 > }
 > ```
 >
-> 1. 配置Bean在应用的过程中替换了XML具体什么内容呢？
+> 1. 配置bean在应用的过程中替换了XML具体什么内容呢？
 >
 >    ![ConfigurationBean](./_Images/ConfigurationBean.png)
 >
-> 2. 配置Bean工厂发生变化
+> 2. 配置bean工厂发生变化
 >
 >    ![ConfigurationBeanFactoryCreate](./_Images/ConfigurationBeanFactoryCreate.png)
 
-- 配置Bean开发的细节分析
+- 配置bean开发的细节分析
 
   - 基于注解开发使用日志
 
@@ -90,7 +90,7 @@
 
 ### 2）@Bean注解
 
-> @Bean注解在配置Bean中进行使用，等同于XML配置文件中的\<bean>标签
+> @Bean注解在配置bean中进行使用，等同于XML配置文件中的\<bean>标签
 
 #### 2.1）@Bean注解的基本使用
 
@@ -322,7 +322,7 @@ public class AppConfig {
 >   - 如何使多配置的信息汇总成一个整体
 >   - 跨配置注入
 
-#### 5.1）多个配置Bean的整合
+#### 5.1）多个配置bean的整合
 
 - 如何使多配置的信息汇总成一个整体
 
@@ -336,7 +336,7 @@ public class AppConfig {
 
   ![@Import](./_Images/@Import.png)
 
-  - 在工厂创建时，指定多个配置Bean的Class对象
+  - 在工厂创建时，指定多个配置bean的Class对象
 
   ```java
   ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig1.class, AppConfig2.class, ...);
@@ -361,7 +361,7 @@ public class AppConfig {
 >
 > 配置bean中增加@ImportResource(".xml文件路径")即可
 
-### 6）配置Bean底层实现原理
+### 6）配置bean底层实现原理
 
 > Spring在配置bean中加入了@Configuration注解后，底层就会通过CGlib的代理方式，来进行对象相关的配置、处理
 >
@@ -476,6 +476,7 @@ public class AppConfig {
 1. 原始对象
 
    ```java
+   @Component
    public class UserServiceImpl implements UserService {
    
        @Override
@@ -581,3 +582,268 @@ public class AppConfig {
 >    Spring AOP代理默认实现是JDK
 >
 >    SpringBoot AOP代理默认实现是CGlib
+
+### 9）纯注解版Spring+MyBatis整合
+
+#### 9.1）整合过程
+
+- 基础配置（配置bean）
+
+  - 连接池
+
+  ```xml
+  <!--连接池-->
+  <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+      <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+      <property name="url" value="jdbc:mysql://localhost:3306/yhc?useSSL=false"/>
+      <property name="username" value="root"/>
+      <property name="password" value="476004"/>
+  </bean>
+  ```
+
+  ```java
+  @Bean
+  public DruidDataSource dataSource(){
+      DruidDataSource dataSource = new DruidDataSource();
+      // set注入
+      return dataSource;
+  }
+  ```
+
+  - SqlSessionFactoryBean
+
+  ```xml
+  <!--创建SqlSessionFactory-->
+  <bean id="ssfb" class="org.mybatis.spring.SqlSessionFactoryBean">
+      <property name="dataSource" ref="dataSource"/>
+      <property name="typeAliasesPackage" value="com.yhc.entity"/>
+      <property name="mapperLocations">
+          <list>
+              <value>classpath:com.yhc.mapper/*Mapper.xml</value>
+          </list>
+      </property>
+  </bean>
+  ```
+
+  ```java
+  @Bean
+  public SqlSessionFactoryBean sqlSessionFactoryBean(){
+      SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+      // set注入
+      return sqlSessionFactoryBean;
+  }
+  ```
+
+  - MapperScannerConfigure
+
+  ```xml
+  <!--DAO接口的实现类
+  	session  ---  session.getMapper()  ---  XXXDAO实现类对象
+  	XXXDAO  ---  xXXDAO
+  -->
+  <bean id="scanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+      <property name="sqlSessionFactoryBeanName" value="ssfb"/>
+      <property name="basePackage" value="com.yhc.dao"/>
+  </bean>
+  ```
+
+  ```java
+  @MapperScan(basePackages={"com.yhc.dao"}) ---> 配置bean中完成
+  ```
+
+- 编码
+
+  - 实体
+  - 表
+  - DAO接口
+  - Mapper文件
+
+#### 9.2）MapperLocations编码时通配的写法
+
+```java
+// 设置Mapper文件的路径
+sqlSessionFactoryBean.setMapperLocations(Resource ...);
+
+Resource resource = new ClassPathResource("UserDAOMapper.xml");
+sqlSessionFactoryBean.setMapperLocations(resource);
+
+// 通配写法
+try {
+    ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+    Resource[] resources = resolver.getResources("com.yhc.mapper/*Mapper.xml");
+    sqlSessionFactoryBean.setMapperLocations(resources);
+} catch (IOException e) {
+    e.printStackTrace();
+}
+```
+
+#### 9.3）配置bean数据耦合的问题
+
+- 提供配置文件
+
+  ```properties
+  mybatis.driverClass = com.mysql.jdbc.Driver
+  mybatis.url = jdbc:mysql://localhost:3306/yhc?useSSL=false
+  mybatis.username = root
+  mybatis.password = 476004
+  mybatis.typeAliasesPackages = com.yhc.mybatis
+  mybatis.mapperLocations = com.yhc.mapper/*Mapper.xml
+  ```
+
+- 封装成配置类
+
+  ```java
+  @Component
+  @PropertySource("mybatis.properties")
+  public class MyBatisProperties {
+  
+      @Value("${mybatis.driverClass}")
+      private String driverClass;
+      @Value("${mybatis.url}")
+      private String url;
+      @Value("${mybatis.username}")
+      private String username;
+      @Value("${mybatis.password}")
+      private String password;
+      @Value("${mybatis.typeAliasesPackages}")
+      private String typeAliasesPackages;
+      @Value("${mybatis.mapperLocations}")
+      private String mapperLocations;
+      
+      // get set 方法
+      ......
+      
+  }
+  ```
+
+- 注入及使用
+
+  ```java
+  @Configuration
+  @ComponentScan(basePackages = "com.yhc.mybatis")
+  @MapperScan(basePackages = "com.yhc.mybatis")
+  public class MyBatisAppConfig {
+  
+      @Autowired
+      private MyBatisProperties myBatisProperties;
+  
+      @Bean
+      public DataSource dataSource(){
+          DruidDataSource dataSource = new DruidDataSource();
+          // set注入
+          dataSource.setDriverClassName(myBatisProperties.getDriverClass());
+          dataSource.setUrl(myBatisProperties.getUrl());
+          dataSource.setUsername(myBatisProperties.getUsername());
+          dataSource.setPassword(myBatisProperties.getPassword());
+          return dataSource;
+      }
+  
+      @Bean
+      public SqlSessionFactoryBean sqlSessionFactoryBean(){
+          SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+          // set注入
+          sqlSessionFactoryBean.setDataSource(dataSource());
+  		sqlSessionFactoryBean.setTypeAliasesPackage(
+              myBatisProperties.getTypeAliasesPackages());
+  
+          try {
+              ResourcePatternResolver resolver = 
+                  new PathMatchingResourcePatternResolver();
+              Resource[] resources = 
+                  resolver.getResources(myBatisProperties.getMapperLocations());
+              sqlSessionFactoryBean.setMapperLocations(resources);
+          } catch (IOException e) {
+              e.printStackTrace();
+          }
+  
+          return sqlSessionFactoryBean;
+      }
+  }
+  ```
+
+### 10）纯注解版事务编程
+
+#### 10.1）开发步骤
+
+- 原始对象
+
+  ```xml
+  <!--Service-->
+  <bean id="userService" class="com.yhc.service.UserServiceImpl">
+      <property name="userDAO" ref="userDAO"/>
+  </bean>
+  ```
+
+  ```java
+  @Service
+  public class UserServiceImpl implements UserService {
+  
+      @Autowired
+      UserDAO userDAO;
+      
+      ......
+  }
+  ```
+
+- 额外功能
+
+  ```xml
+  <!--DataSourceTransactionManager-->
+  <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+      <property name="dataSource" ref="dataSource"/>
+  </bean>
+  ```
+
+  ```java
+  @Autowired
+  private DataSource dataSource;
+  
+  @Bean
+  public DataSourceTransactionManager dataSourceTransactionManager(){
+      DataSourceTransactionManager dataSourceTransactionManager = 
+          new DataSourceTransactionManager();
+      dataSourceTransactionManager.setDataSource(dataSource);
+      return  dataSourceTransactionManager;
+  }
+  ```
+
+- 事务属性
+
+  ```java
+  @Transactional
+  public class UserServiceImpl implements UserService {
+  	......
+  }
+  ```
+
+  ```java
+  @Service
+  @Transactional
+  public class UserServiceImpl implements UserService {
+  
+      @Autowired
+      UserDAO userDAO;
+  	
+      ......
+  }
+  ```
+
+- 基于Schema（注解）的事务配置
+
+  ```xml
+  <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>
+  ```
+
+  ```java
+  @EnableTransactionManagement
+  ```
+
+> 细节分析：
+>
+> Spring+MyBatis ---> DAO
+>
+> 基于注解的事务开发 ---> Service
+>
+> Controller ---> 需要org.springframework.web.context.ContextLoaderListener ---> 只能基于XML工厂开发
+>
+> 不能直接new

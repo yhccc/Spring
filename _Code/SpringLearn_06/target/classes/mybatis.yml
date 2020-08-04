@@ -1,0 +1,9 @@
+mybatis:
+  driverClass: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/yhc?useSSL=false
+  username: root
+  password: 476004
+  typeAliasesPackages: com.yhc.mybatis
+  mapperLocations: com.yhc.mapper/*Mapper.xml
+
+list: 111,222

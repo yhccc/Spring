@@ -70,6 +70,9 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 [30.Spring的基础注解](_30_Spring的基础注解.md)  
 
 [31.Spring的高级注解](_31_Spring的高级注解.md)  
+
+[32.Spring框架中YML的使用](_32_Spring框架中YML的使用.md)  
+
 #### 报错解决
 
 > 无法读取方案文档 'https://www.springframework.org/schema/tool/spring-tool.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>
@@ -89,4 +92,4 @@ SpringLearn: B站地址(https://www.bilibili.com/video/BV185411477k)
 > </dependency>
 > ```
 
-<p align="right">更新时间: 2020-08-03</p>
+<p align="right">更新时间: 2020-08-04</p>
